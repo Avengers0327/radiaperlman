@@ -41,20 +41,6 @@ Then open `http://localhost:8501` in your browser.
 
 ---
 
-## Project Structure
-main.py                Entry point and navigation
-
-pages/
-
-home.py               
-thesis.py             
-early.py
-looping.py 
-stp.py
-legacy.py
-cited.py
----
-
 ## Dependencies
 streamlit>=1.36.0
 
