@@ -166,7 +166,7 @@ st.markdown(f"""
         <small>Image: BalticServers.com, CC BY-SA 3.0, via Wikimedia Commons</small>
     </div>
     <div class="section-text">
-        <h2A Protocol That Changed Everything</h2>
+        <h2>A Protocol That Changed Everything</h2>
         <p>Today, STP remains a foundational standard in network engineering, running in ethernets across the globe. 
         As networks became more complex, STP was updated with versions such as RSTP and MSTP, but each evolution held
         the same core principles as the original. STP enabled reliable ethernet and LAN connections, which are the 
