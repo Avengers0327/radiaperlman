@@ -139,10 +139,11 @@ st.markdown(f"""
 
 <div class="thesis-cta">
     <div class="thesis-meta">
-        <p>Name: </p>
-        <p>Contest: </p>
-        <p>Student-Composed Word Count: </p>
-        <p>Process Paper Word Count: </p>
+        <p>Aarav Mehta</p>
+        <p>Individual Website</p>
+        <p>Middle School, Grade 7</p>
+        <p>Student-Composed Word Count: 1199</p>
+        <!-- <p>Process Paper Word Count:</p> -->
     </div>
 </div>
 
