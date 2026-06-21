@@ -46,13 +46,13 @@ main.py              # Entry point and navigation
 
 pages/
 
-home.py            # Home page
-thesis.py          # Thesis page
-early_internet.py  # The Early Internet page
-infinite_loop.py   # Infinite Looping page
-stp.py             # Spanning Tree Protocol page
-legacy.py          # Legacy page
-cited.py           # Works cited
+home.py                Home page
+thesis.py              Thesis page
+early_internet.py      The Early Internet page
+infinite_loop.py       Infinite Looping page
+stp.py                 Spanning Tree Protocol page
+legacy.py              Legacy page
+cited.py               Works cited
 ---
 
 ## Dependencies
