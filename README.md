@@ -42,7 +42,7 @@ Then open `http://localhost:8501` in your browser.
 ---
 
 ## Project Structure
-main.py              # Entry point and navigation
+main.py                Entry point and navigation
 
 pages/
 
