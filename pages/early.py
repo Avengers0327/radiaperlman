@@ -53,6 +53,7 @@ section[data-testid="stMain"] {
     transform: translateY(-50%);
     color: white;
     text-align: center;
+    color: green;
 }
 
 .hero-text h1 {
