@@ -53,14 +53,16 @@ section[data-testid="stMain"] {
     transform: translateY(-50%);
     color: white;
     text-align: center;
-    color: green;
 }
 
 .hero-text h1 {
-    font-size: 3rem;
+    font-size: 4rem;
     margin: 0;
-    padding: 0;
     line-height: 1;
+    color: white;
+    text-shadow:
+        0 0 8px rgba(0,0,0,0.9),
+        0 0 20px rgba(0,0,0,0.7);
 }
 
 .hero-text p {
