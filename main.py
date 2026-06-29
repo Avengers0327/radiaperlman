@@ -9,8 +9,8 @@ pg = st.navigation([
     st.Page("pages/looping.py", title="Infinite Looping", icon=None),
     st.Page("pages/stp.py", title="Spanning Tree Protocol", icon=None),
     st.Page("pages/legacy.py", title="Legacy", icon=None),
-    st.Page("pages/cited.py", title="Works Cited", icon=None),
+    st.Page("pages/interview.py", title="Interview", icon=None),
+    st.Page("pages/written.py", title="Written Materials", icon=None),
 ], position="top")
 
 pg.run()
-
