@@ -1,4 +1,7 @@
 import streamlit as st
+from streamlit_pdf_viewer import pdf_viewer
+
+st.set_page_config(layout="wide")
 
 banner_url = "https://upload.wikimedia.org/wikipedia/commons/e/e8/Radia_Perlman_%2820175426302%29.jpg"
 
@@ -82,6 +85,7 @@ section[data-testid="stMain"] {
     padding-left: 1rem;
 }
 
+/* 
 .citations {
     font-size: 1.5rem; 
     text-align: left;
@@ -90,6 +94,7 @@ section[data-testid="stMain"] {
     padding: 4rem 8rem; 
     line-height: 1.7; 
 }
+*/
 
 /* ── Hide sidebar ── */
 [data-testid="stSidebar"] {
@@ -100,6 +105,10 @@ section[data-testid="stMain"] {
     display: none !important;
 }
 
+[data-testid="stElementContainer"]:has(canvas) {
+    height: calc(100vh - 80px);
+}
+
 </style>
 """, unsafe_allow_html=True)
 
@@ -107,7 +116,7 @@ st.markdown(f"""
 <div class="hero">
     <img src="{banner_url}">
     <div class="hero-text">
-        <h1>Works Cited</h1>
+        <h1>Written Materials</h1>
     </div>
 </div>
 
@@ -115,6 +124,7 @@ st.markdown(f"""
     Image: Jalisco Campus Party, CC BY 2.0 <https://creativecommons.org/licenses/by/2.0>, via Wikimedia Commons
 </div>
 
+<!-- 
 <div class="citations">
     <p>Henn, S. (2014, October 21). When women stopped coding. NPR. https://www.npr.org/sections/money/2014/10/21/357629765/when-women-stopped-coding</p>
     <p>Radia Perlman | Lemelson. (n.d.). https://lemelson.mit.edu/resources/radia-perlman</p>
@@ -122,6 +132,7 @@ st.markdown(f"""
     <p>Schwab, K. (2021, March 18). How tech pioneer Radia Perlman overcame bias to invent a core component of the internet. Fast Company. https://www.fastcompany.com/90615239/radia-perlman-internet-pioneer-gender-bias</p>
     <p>What is the purpose of the Spanning Tree Protocol (STP)? (2026, March 4). Omnitron Systems. https://www.omnitron-systems.com/blog/what-is-the-purpose-of-the-spanning-tree-protocol-stp</p>
 </div>
+<!-- 
 
 <div style="
     position: fixed;
@@ -145,3 +156,12 @@ st.markdown(f"""
 </div>
 
 """, unsafe_allow_html=True)
+
+with open("process_paper.pdf", "rb") as f:
+    pdf_bytes = f.read()
+
+pdf_viewer(
+    input=pdf_bytes,
+    width="90%",
+    height=1000
+)
