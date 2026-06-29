@@ -58,13 +58,10 @@ section[data-testid="stMain"] {
 }
 
 .hero-text h1 {
-    font-size: 4rem;
+    font-size: 3rem;
     margin: 0;
+    padding: 0;
     line-height: 1;
-    color: white;
-    text-shadow:
-        0 0 8px rgba(0,0,0,0.9),
-        0 0 20px rgba(0,0,0,0.7);
 }
 
 .hero-text p {
@@ -165,8 +162,8 @@ st.markdown(f"""
 
 <div class="section">
     <div class="section-img-wrap">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/d/d7/Spanning_tree_protocol_at_work_1.svg">
-        <small>GhosT, CC BY 3.0 <https://creativecommons.org/licenses/by/3.0>, via Wikimedia Commons</small>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/2/2e/Spanning_tree_topology.png">
+        <small>ReneOFD at German Wikipedia., CC BY-SA 3.0 <http://creativecommons.org/licenses/by-sa/3.0/>, via Wikimedia Commons</small>
     </div>
     <div class="section-text">
         <h2>Perlman's Solution</h2>
@@ -203,24 +200,24 @@ with col_text:
 
     if st.session_state.get("show_stp"):
         msgs = [
-            "$ Initializing network simulation...",
+            "$ Initializing network...",
             "$ Connecting to switch cluster...",
             "$ Establishing redundant links...",
             "$ Sending broadcast frame...",
             "$ Monitoring traffic...",
-            "$ Detecting network topology...",
+            "$ Detecting topology...",
         ]
 
         results = [
             "[INFO] Root bridge elected",
             "[INFO] Calculating spanning tree...",
-            "[INFO] Selecting lowest-cost paths",
+            "[INFO] Selecting best paths",
             "[INFO] Blocking redundant ports",
             "[INFO] Loop-free topology established",
             "[INFO] Broadcast frame forwarded successfully",
             "[INFO] Backup links standing by",
             "[SUCCESS] Redundancy preserved",
-            "[SUCCESS] Network operating normally",
+            "[SUCCESS] Network stable",
             "[SUCCESS] Broadcast storm prevented",
         ]
 
