@@ -58,13 +58,10 @@ section[data-testid="stMain"] {
 }
 
 .hero-text h1 {
-    font-size: 4rem;
+    font-size: 3rem;
     margin: 0;
+    padding: 0;
     line-height: 1;
-    color: white;
-    text-shadow:
-        0 0 8px rgba(0,0,0,0.9),
-        0 0 20px rgba(0,0,0,0.7);
 }
 
 .hero-text p {
@@ -191,7 +188,7 @@ with col_text:
 
     if st.session_state.get("show_loop_errors"):
         msgs = [
-            "$ Initializing network simulation...",
+            "$ Initializing network...",
             "$ Connecting to switch cluster...",
             "$ Establishing redundant links...",
             "$ Sending broadcast frame...",
@@ -243,3 +240,7 @@ with col_img:
     </small>
 </div>
 """, unsafe_allow_html=True)
+
+
+
+
