@@ -146,7 +146,7 @@ st.markdown(f"""
         <p>Individual Website</p>
         <p>Middle School, Grade 7</p>
         <p>Student-Composed Word Count: 1199</p>
-        <!-- <p>Process Paper Word Count:</p> -->
+        <p>Process Paper Word Count: XXX</p>
     </div>
 </div>
 
