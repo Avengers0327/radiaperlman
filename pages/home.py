@@ -131,8 +131,8 @@ st.markdown(f"""
 <div class="hero">
     <img src="{banner_url}">
     <div class="hero-text">
-        <h1>Radia Perlman</h1>
-        <p>Pioneer of modern networking</p>
+        <h1>Breaking the Loop:</h1>
+        <p>How Radia Perlman Made the Modern Internet Possible</p>
     </div>
 </div>
 
