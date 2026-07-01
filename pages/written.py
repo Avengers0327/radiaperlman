@@ -8,6 +8,12 @@ banner_url = "https://upload.wikimedia.org/wikipedia/commons/e/e8/Radia_Perlman_
 st.markdown("""
 <style>
 
+::root {
+    scroll-behavior: smooth
+    color: var(--text-color);
+    padding-bottom: 4px;
+}
+
 [data-testid="stAppViewContainer"] {
     padding: 0 !important;
 }
@@ -85,6 +91,13 @@ section[data-testid="stMain"] {
     padding-left: 1rem;
 }
 
+.headings h1 {
+    font-size: 3rem;
+    line-height: 1;
+    color: var(--text-color);
+    text-align: center;
+}
+
 
 /* ── Hide sidebar ── */
 [data-testid="stSidebar"] {
@@ -123,11 +136,29 @@ with open("annotated.pdf", "rb") as f:
     annotated = f.read()
 
 
+st.markdown("""
+<div class="headings">
+    <h1>Process Paper:</h1>
+</div>
+""", unsafe_allow_html=True)
+
+st.space(50)
+
 pdf_viewer(
     input=process_paper,
     width="45%",
     height=1400
 )
+
+st.space(50)
+
+st.markdown("""
+<div class="headings">
+    <h1>Annotated Bibliography:</h1>
+</div>
+""", unsafe_allow_html=True)
+
+st.space(50)
 
 pdf_viewer(
     input=annotated,
