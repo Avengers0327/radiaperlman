@@ -11,6 +11,10 @@ if bg == "#0e1117":
     st.markdown("""
     <style>
     
+    html {
+        scroll-behavior: smooth
+    }
+    
     [data-testid="stAppViewContainer"] {
         padding: 0 !important;
     }
@@ -61,7 +65,7 @@ if bg == "#0e1117":
         text-align: center;
     }
     
-    .hero-text h1 {
+     .hero-text h1 {
         font-size: 4rem;
         margin: 0;
         line-height: 1;
@@ -132,7 +136,7 @@ if bg == "#0e1117":
     
     </style>
     """, unsafe_allow_html=True)
-    
+
     st.markdown(f"""
     <div class="hero">
         <img src="{banner_url}">
@@ -148,63 +152,44 @@ if bg == "#0e1117":
     
     <div class="thesis-cta">
         <div class="thesis-meta">
-            <p>Aarav Mehta</p>
-            <p>Individual Website</p>
-            <p>Middle School, Grade 7</p>
-            <p>Student-Composed Word Count: 1199</p>
-            <p>Process Paper Word Count: 435</p>
+            <p>Name: </p>
+            <p>Contest: </p>
+            <p>Student-Composed Word Count: </p>
+            <p>Process Paper Word Count: </p>
         </div>
     </div>
-    
-    <div style="
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        z-index: 9999;
-        background: rgba(0,0,0,0.6);
-        backdrop-filter: blur(8px);
-        display: flex;
-        justify-content: center;
-        gap: 3rem;
-        padding: 1rem 2rem;
-    ">
-        <a href="/Home" style="color:white; text-decoration:none; font-size:1rem; font-weight:600; opacity:0.85;">Home</a>
-        <a href="/Thesis" style="color:white; text-decoration:none; font-size:1rem; font-weight:600; opacity:0.85;">Thesis</a>
-        <a href="/The_Early_Internet" style="color:white; text-decoration:none; font-size:1rem; font-weight:600; opacity:0.85;">The Early Internet</a>
-        <a href="/Infinite_Looping" style="color:white; text-decoration:none; font-size:1rem; font-weight:600; opacity:0.85;">Infinite Looping</a>
-        <a href="/Spanning_Tree_Protocol" style="color:white; text-decoration:none; font-size:1rem; font-weight:600; opacity:0.85;">STP</a>
-        <a href="/Legacy" style="color:white; text-decoration:none; font-size:1rem; font-weight:600; opacity:0.85;">Legacy</a>
-    </div>
-    
     """, unsafe_allow_html=True)
-elif bg == "#fffff":
+elif bg == "#ffffff":
     st.markdown("""
     <style>
-    
+
+    html {
+        scroll-behavior: smooth
+    }
+
     [data-testid="stAppViewContainer"] {
         padding: 0 !important;
     }
-    
+
     section[data-testid="stMain"] {
         padding: 0 !important;
     }
-    
+
     [data-testid="stMainBlockContainer"] {
         max-width: 100% !important;
         max-height: 100% !important;
         padding: 0 !important;
     }
-    
+
     [data-testid="stMain"] > div {
         padding: 0 !important;
     }
-    
+
     /* ── Layout ── */
     [data-testid="block-container"] {
         padding: 0 !important;
     }
-    
+
     /* ── Hero image container ── */
     .hero {
         position: relative;
@@ -212,7 +197,7 @@ elif bg == "#fffff":
         height: 70vh;
         overflow: hidden;
     }
-    
+
     /* ── Hero image styling ── */
     .hero img {
         width: 100%;
@@ -220,7 +205,7 @@ elif bg == "#fffff":
         object-fit: cover;
         filter: grayscale(100%) contrast(1.2) brightness(0.75);
     }
-    
+
     /* ── Centered text overlay on hero ── */
     .hero-text {
         position: absolute;
@@ -231,8 +216,8 @@ elif bg == "#fffff":
         color: white;
         text-align: center;
     }
-    
-    .hero-text h1 {
+
+     .hero-text h1 {
         font-size: 4rem;
         margin: 0;
         line-height: 1;
@@ -241,14 +226,14 @@ elif bg == "#fffff":
             0 0 8px rgba(0,0,0,0.9),
             0 0 20px rgba(0,0,0,0.7);
     }
-    
+
     .hero-text p {
         font-size: 1.2rem;
         opacity: 0.85;
         margin: 0.5rem 0 0 0;
         padding: 0;
     }
-    
+
     /* ── Image caption below hero ── */
     .hero-caption {
         text-align: left;
@@ -258,13 +243,13 @@ elif bg == "#fffff":
         margin-bottom: 24px;
         padding-left: 1rem;
     }
-    
+
     /* ── Thesis link ── */
     .thesis-cta {
         text-align: center;
         margin: 3rem auto;
     }
-    
+
     .thesis-cta a {
         font-size: 2rem;
         font-weight: bold;
@@ -273,37 +258,37 @@ elif bg == "#fffff":
         border-bottom: 3px solid black;
         padding-bottom: 4px;
     }
-    
+
     .thesis-cta a:hover {
         opacity: 0.6;
     }
-    
+
     /* ── Metadata block under thesis link ── */
     .thesis-meta {
         margin-top: 1.5rem;
         text-align: center;
     }
-    
+
     .thesis-meta p {
         font-size: 2rem;
         font-weight: bold;
-        color: white;
+        color: black;
         padding-bottom: 4px;
         margin: 0.3rem 0;
     }
-    
+
     /* ── Hide sidebar ── */
     [data-testid="stSidebar"] {
         display: none !important;
     }
-    
+
     [data-testid="stSidebarCollapsedControl"] {
         display: none !important;
     }
-    
+
     </style>
     """, unsafe_allow_html=True)
-    
+
     st.markdown(f"""
     <div class="hero">
         <img src="{banner_url}">
@@ -312,11 +297,11 @@ elif bg == "#fffff":
             <p>How Radia Perlman Made the Modern Internet Possible</p>
         </div>
     </div>
-    
+
     <div class="hero-caption">
         Image: Jalisco Campus Party, CC BY 2.0, via Wikimedia Commons
     </div>
-    
+
     <div class="thesis-cta">
         <div class="thesis-meta">
             <p>Aarav Mehta</p>
@@ -325,27 +310,6 @@ elif bg == "#fffff":
             <p>Student-Composed Word Count: 1199</p>
             <p>Process Paper Word Count: 435</p>
         </div>
+</div>
     </div>
-    
-    <div style="
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        z-index: 9999;
-        background: rgba(0,0,0,0.6);
-        backdrop-filter: blur(8px);
-        display: flex;
-        justify-content: center;
-        gap: 3rem;
-        padding: 1rem 2rem;
-    ">
-        <a href="/Home" style="color:white; text-decoration:none; font-size:1rem; font-weight:600; opacity:0.85;">Home</a>
-        <a href="/Thesis" style="color:white; text-decoration:none; font-size:1rem; font-weight:600; opacity:0.85;">Thesis</a>
-        <a href="/The_Early_Internet" style="color:white; text-decoration:none; font-size:1rem; font-weight:600; opacity:0.85;">The Early Internet</a>
-        <a href="/Infinite_Looping" style="color:white; text-decoration:none; font-size:1rem; font-weight:600; opacity:0.85;">Infinite Looping</a>
-        <a href="/Spanning_Tree_Protocol" style="color:white; text-decoration:none; font-size:1rem; font-weight:600; opacity:0.85;">STP</a>
-        <a href="/Legacy" style="color:white; text-decoration:none; font-size:1rem; font-weight:600; opacity:0.85;">Legacy</a>
-    </div>
-    
     """, unsafe_allow_html=True)
