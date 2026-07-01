@@ -5,6 +5,12 @@ banner_url = "https://upload.wikimedia.org/wikipedia/commons/8/8b/Arpanet_logica
 st.markdown("""
 <style>
 
+::root {
+    scroll-behavior: smooth
+    color: var(--text-color);
+    padding-bottom: 4px;
+}
+
 [data-testid="stAppViewContainer"] {
     padding: 0 !important;
 }
@@ -55,7 +61,7 @@ section[data-testid="stMain"] {
     text-align: center;
 }
 
-.hero-text h1 {
+ .hero-text h1 {
     font-size: 4rem;
     margin: 0;
     line-height: 1;
@@ -94,34 +100,59 @@ section[data-testid="stMain"] {
     flex-direction: row-reverse;
 }
 
-.section-img-wrap {
-    width: 40%;
+.section-img-wrap,
+.stp-diagram,
+.image-hover {
+    width:40%;
+    overflow:hidden;
+    border-radius:4px;
 }
 
-.section-img-wrap img {
-    width: 100%;
-    border-radius: 4px;
-    object-fit: cover;
+.section-img-wrap img,
+.stp-diagram img,
+.datacenter-img{
+
+    width:100%;
+    display:block;
+    border-radius:4px;
+
+    object-fit:contain;
+
+    transition:
+        transform .25s ease,
+        box-shadow .25s ease;
 }
 
-.section-img-wrap small {
-    display: block;
-    margin-top: 6px;
-    font-size: 0.8rem;
-    color: #999;
+.section-img-wrap img:hover,
+.stp-diagram img:hover,
+.datacenter-img:hover{
+
+    transform:scale(1.05);
+
+    box-shadow:0 8px 20px rgba(0,0,0,.35);
+}
+
+.section-img-wrap small,
+
+.stp-diagram small {
+    display:block;
+    margin-top:6px;
+    font-size:.8rem;
+    color:#999;
 }
 
 .section-text {
-    width: 55%;
-    font-size: 1.5rem;
-    color: white;
-    line-height: 1.7;
+   width: 55%;
+   font-size: 1.5rem;
+   color: var(--text-color); 
+   line-height: 1.7;
 }
 
+
 .section-text h2 {
-    font-size: 1.9rem;
-    margin-bottom: 1rem;
-    color: white;
+   font-size: 1.9rem;
+   margin-bottom: 1rem;
+   color: var(--text-color); 
 }
 
 /* ── Hide sidebar ── */
@@ -182,27 +213,6 @@ st.markdown(f"""
         IMPs had no standardized way to direct packets, meaning packets could become misdirected and 
         start an infinite loop. These are called broadcast storms.</p>
     </div>
-</div>
-
-<div style="
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 9999;
-    background: rgba(0,0,0,0.6);
-    backdrop-filter: blur(8px);
-    display: flex;
-    justify-content: center;
-    gap: 3rem;
-    padding: 1rem 2rem;
-">
-    <a href="/Home" style="color:white; text-decoration:none; font-size:1rem; font-weight:600; opacity:0.85;">Home</a>
-    <a href="/Thesis" style="color:white; text-decoration:none; font-size:1rem; font-weight:600; opacity:0.85;">Thesis</a>
-    <a href="/The_Early_Internet" style="color:white; text-decoration:none; font-size:1rem; font-weight:600; opacity:0.85;">The Early Internet</a>
-    <a href="/Infinite_Looping" style="color:white; text-decoration:none; font-size:1rem; font-weight:600; opacity:0.85;">Infinite Looping</a>
-    <a href="/Spanning_Tree_Protocol" style="color:white; text-decoration:none; font-size:1rem; font-weight:600; opacity:0.85;">STP</a>
-    <a href="/Legacy" style="color:white; text-decoration:none; font-size:1rem; font-weight:600; opacity:0.85;">Legacy</a>
 </div>
 
 """, unsafe_allow_html=True)
