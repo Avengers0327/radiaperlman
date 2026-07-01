@@ -5,6 +5,12 @@ banner_url = "https://upload.wikimedia.org/wikipedia/commons/e/e8/Radia_Perlman_
 st.markdown("""
 <style>
 
+::root {
+    scroll-behavior: smooth
+    color: var(--text-color);
+    padding-bottom: 4px;
+}
+
 [data-testid="stAppViewContainer"] {
     padding: 0 !important;
 }
@@ -55,7 +61,7 @@ section[data-testid="stMain"] {
     text-align: center;
 }
 
-.hero-text h1 {
+ .hero-text h1 {
     font-size: 4rem;
     margin: 0;
     line-height: 1;
@@ -86,7 +92,7 @@ section[data-testid="stMain"] {
     font-size: 1.5rem; 
     text-align: center;
     font-weight: bold;  
-    color: white;
+    color: var(--text-color);;
     padding: 4rem 8rem; 
     line-height: 1.7; 
 }
@@ -123,26 +129,6 @@ st.markdown(f"""
   these loops, allowing networks to thrive and complex multidevice networks to form.
 </p>
 </div>
-
-<div style="
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 9999;
-    background: rgba(0,0,0,0.6);
-    backdrop-filter: blur(8px);
-    display: flex;
-    justify-content: center;
-    gap: 3rem;
-    padding: 1rem 2rem;
-">
-    <a href="/Home" style="color:white; text-decoration:none; font-size:1rem; font-weight:600; opacity:0.85;">Home</a>
-    <a href="/Thesis" style="color:white; text-decoration:none; font-size:1rem; font-weight:600; opacity:0.85;">Thesis</a>
-    <a href="/The_Early_Internet" style="color:white; text-decoration:none; font-size:1rem; font-weight:600; opacity:0.85;">The Early Internet</a>
-    <a href="/Infinite_Looping" style="color:white; text-decoration:none; font-size:1rem; font-weight:600; opacity:0.85;">Infinite Looping</a>
-    <a href="/Spanning_Tree_Protocol" style="color:white; text-decoration:none; font-size:1rem; font-weight:600; opacity:0.85;">STP</a>
-    <a href="/Legacy" style="color:white; text-decoration:none; font-size:1rem; font-weight:600; opacity:0.85;">Legacy</a>
 </div>
 
 """, unsafe_allow_html=True)
